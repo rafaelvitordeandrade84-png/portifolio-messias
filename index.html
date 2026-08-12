@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero</title>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="logo">Messias</a>
+
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#etapas">Etapas</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#faq">Faq</a></li>
+      </ul>
+
+<a href="https://wa.me/5591920001549?text=Olá%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais!" class="nav-cta" target="_blank" rel="noopener noreferrer">Vamos Conversar</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-links">
+      <li><a href="#inicio">Início</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#etapas">Etapas</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#faq">Faq</a></li>
+    </ul>
+<a href="https://wa.me/5591920001549?text=Olá%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais!" class="mobile-cta" target="_blank" rel="noopener noreferrer">Vamos Conversar</a>
+  </div>
+
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
+  });
+
+  // Fecha o menu ao clicar em qualquer link
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('open');
+    });
+  });
+</script>
+
+
+
+  <div class="hero-wrap" id="inicio">
+    <div class="hero">
+      <div class="badge">
+        <span class="badge-label">Disponível</span>
+        Seu Próximo Projeto Começa Aqui
+      </div>
+
+      <h1>Vamos Transformar Sua <span class="highlight">Presença Digital?</span></h1>
+      <p class="desc">Desenvolvo sites modernos, sistemas personalizados e soluções digitais que ajudam empresas a transmitir mais credibilidade, atrair clientes e crescer online.</p>
+<a href="https://wa.me/5591920001549?text=Olá%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais!" class="btn" target="_blank" rel="noopener noreferrer">Vamos Conversar</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FEATURES SECTION -->
+<section class="features-section" id="projetos">
+  <div class="features-inner">
+
+    <div class="features-top">
+      <div class="features-badge">
+        Projetos Recentes
+      </div>
+      <h2 class="features-title">Soluções Digitais Desenvolvidas com Foco em <span class="highlight">Resultados</span></h2>
+    </div>
+
+    <div class="cards-grid">
+
+      <a href="https://advogado-rho-lime.vercel.app/" class="card" target="_blank" rel="noopener noreferrer">
+        <div class="card-title">Site Institucional para Escritório de Advocacia</div>
+        <p class="card-desc">Desenvolvido para transmitir credibilidade e profissionalismo, com foco na apresentação dos serviços jurídicos, áreas de atuação e captação de novos clientes.</p>
+        <div class="card-img" style="padding:0;min-height:170px;">
+          <img src="img/Design sem nome (9).webp" alt="Exchange rate" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:10px;">
+        </div>
+      </a>
+
+      <a href="https://clinica-est-tica-green.vercel.app/" class="card" target="_blank" rel="noopener noreferrer">
+        <div class="card-title">Site Moderno para Clínica de Estética</div>
+        <p class="card-desc">Projeto criado para destacar procedimentos, fortalecer a presença digital da clínica e facilitar o agendamento de consultas por meio de uma experiência visual elegante.</p>
+        <div class="card-img" style="padding:0;min-height:170px;">
+          <img src="img/Design sem nome (10).webp" alt="Banking perks" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:10px;">
+        </div>
+      </a>
+
+      <a href="https://dentista11.vercel.app/" class="card" target="_blank" rel="noopener noreferrer">
+        <div class="card-title">Site Profissional para Dentista</div>
+        <p class="card-desc">Desenvolvido para oferecer informações claras aos pacientes, apresentar especialidades médicas e simplificar o processo de contato e agendamento de consultas.</p>
+        <div class="card-img" style="padding:0;min-height:170px;">
+          <img src="img/Design sem nome (11) (1).webp"Multiple teams" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:10px;">
+        </div>
+      </a>
+
+      <a href="https://nutricionista-eta.vercel.app/" class="card" target="_blank" rel="noopener noreferrer">
+        <div class="card-title">Site Profissional para Nutricionista</div>
+        <p class="card-desc">Projeto focado em fortalecer a autoridade profissional, apresentar serviços de acompanhamento nutricional e facilitar o agendamento de consultas de forma prática.</p>
+        <div class="card-img" style="padding:0;min-height:170px;">
+          <img src="img/Design sem nome (14).webp" alt="Instant notifications" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:10px;">
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- STATEMENT SECTION -->
+  <section class="statement-section" id="sobre">
+    <div class="statement-inner">
+
+      <span class="statement-badge">/ 001 / Sobre mim</span>
+
+      <h2 class="statement-title">
+        Sou Messias, desenvolvedor web especializado em sites para negócios locais. Cada projeto é pensado do zero — com identidade própria, foco em resultados e entrega dentro do prazo combinado. <span class="highlight"><span class="muted">Cuido de tudo, do design à publicação.</span></span>
+      </h2>
+
+    <a href="https://wa.me/5591920001549?text=Olá%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais!" class="statement-cta" target="_blank" rel="noopener noreferrer">
+  Ver como funciona
+  <span class="statement-cta-icon">↓</span>
+</a>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- STEPS SECTION -->
+  <section class="steps-section" id="etapas">
+    <div class="steps-inner">
+
+      <div class="steps-left">
+        <span class="statement-badge2">/ 002 / Etapas</span>
+        <h2>Do primeiro <span class="muted">contato</span> à entrega</h2>
+        <p>Um processo simples, transparente e sem surpresas — para você focar no seu negócio enquanto eu cuido do site.</p>
+<a href="https://wa.me/5591920001549?text=Olá%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais!" class="steps-cta" target="_blank" rel="noopener noreferrer">Falar comigo</a>
+      </div>
+
+      <div class="steps-cards">
+
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-card-title">Primeiro contato</div>
+          <p class="step-card-desc">Você me conta sobre o seu negócio e o que precisa. Sem formulários longos.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-card-title">Proposta e alinhamentos</div>
+          <p class="step-card-desc">Envio um orçamento claro com escopo, prazo e valor — tudo definido antes de começar.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-card-title">Desenvolvimento</div>
+          <p class="step-card-desc">Construo o site com foco em design, velocidade e conversão. Você acompanha cada etapa.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <div class="step-card-title">Entrega e suporte</div>
+          <p class="step-card-desc">Site no ar no prazo combinado. Fico disponível para ajustes e dúvidas após o lançamento.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- BENEFITS SECTION -->
+  <section class="benefits-section" id="diferenciais">
+    <div class="benefits-inner">
+
+      <div class="benefits-top">
+        <div class="benefits-top-left">
+          <span class="benefits-badge">/ 003 / BENEFÍCIOS</span>
+          <h2 class="benefits-title">Mais resultado,<span class="dim">menos preocupação.</span></h2>
+        </div>
+        <div class="benefits-top-right">
+          <p class="benefits-desc">Um site profissional, entregue no prazo, com comunicação clara do início ao fim. Você foca no seu negócio — eu cuido do digital.</p>
+        </div>
+      </div>
+
+      <div class="benefits-cards">
+
+        <div class="benefit-card">
+          <span class="benefit-num">/01</span>
+          <div class="benefit-icon">
+            <img src="img/dolar.png" alt="Orçamento transparente">
+          </div>
+          <div class="benefit-body">
+            <div class="benefit-title">Orçamento transparente</div>
+            <p class="benefit-desc">Valor e escopo definidos antes de começar. Sem cobranças inesperadas no meio do caminho.</p>
+          </div>
+          <div class="benefit-bar"></div>
+        </div>
+
+        <div class="benefit-card">
+          <span class="benefit-num">/02</span>
+          <div class="benefit-icon">
+            <img src="img/relogio.png" alt="Entrega no prazo">
+          </div>
+          <div class="benefit-body">
+            <div class="benefit-title">Entrega no prazo</div>
+            <p class="benefit-desc">Projetos entregues na data combinada, sem atrasos nem sumiços durante o processo.</p>
+          </div>
+          <div class="benefit-bar"></div>
+        </div>
+
+        <div class="benefit-card">
+          <span class="benefit-num">/03</span>
+          <div class="benefit-icon">
+            <img src="img/definicoes.png" alt="Suporte após o lançamento">
+          </div>
+          <div class="benefit-body">
+            <div class="benefit-title">Suporte após o lançamento</div>
+            <p class="benefit-desc">Fico disponível para ajustes, dúvidas e melhorias mesmo depois que o site estiver no ar.</p>
+          </div>
+          <div class="benefit-bar"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section" id="faq">
+    <div class="faq-inner">
+
+      <div class="faq-top">
+        <span class="faq-badge">FAQ</span>
+        <h2 class="faq-title">Perguntas frequentes</h2>
+        <p class="faq-desc">Tire suas dúvidas antes de começar.</p>
+        <a href="https://wa.me/5591920001549?text=Olá%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais!" class="faq-cta" target="_blank" rel="noopener noreferrer">Falar comigo »</a>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Quanto tempo leva para entregar um site?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>O prazo médio é de 3 a 7 dias úteis após o alinhamento inicial. Projetos mais complexos podem levar um pouco mais — mas tudo é definido antes de começar.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Preciso ter texto e imagens prontos para contratar?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Não necessariamente. Posso te ajudar a organizar as informações do seu negócio e orientar sobre quais materiais são necessários. Quanto mais conteúdo você tiver, mais rápido avançamos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            O site vai funcionar bem no celular?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim. Todos os sites são desenvolvidos com design responsivo — funcionam perfeitamente em celular, tablet e computador.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Você faz manutenção após a entrega?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim. Ofereço suporte após o lançamento para ajustes, correções e atualizações de conteúdo. Os detalhes dependem do pacote contratado.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Como funciona o pagamento?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Trabalhamos com uma entrada antes do início do desenvolvimento e o restante na entrega. Tudo combinado de forma clara na proposta, sem cobranças surpresa.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner">
+    <div class="cta-banner-inner">
+      <h2 class="cta-banner-title">Pronto para ter um site que representa seu negócio?</h2>
+      <p class="cta-banner-desc">Me conta o que você precisa e eu te mando uma proposta sem compromisso. É rápido e sem enrolação.</p>
+<a href="https://wa.me/5591920001549?text=Olá%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais!" class="cta-banner-btn" target="_blank" rel="noopener noreferrer">Falar comigo »</a>
+    </div>
+  </div>
+
+<script>
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+
+      // fecha todos os outros itens (efeito acordeão)
+      document.querySelectorAll('.faq-item.open').forEach(openItem => {
+        if (openItem !== item) openItem.classList.remove('open');
+      });
+
+      item.classList.toggle('open', !isOpen);
+    });
+  });
+</script>
+
+
+
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+
+  <a href="https://wa.me/5591920001549?text=Olá%2C%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais!"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Falar no WhatsApp"
+>
+  <span class="whatsapp-float-bubble">Falar no WhatsApp</span>
+  <div class="whatsapp-float-btn">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 2C8.268 2 2 8.268 2 16c0 2.47.67 4.784 1.838 6.77L2 30l7.43-1.812A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5a11.46 11.46 0 0 1-5.85-1.607l-.42-.25-4.41 1.075 1.1-4.3-.274-.44A11.46 11.46 0 0 1 4.5 16C4.5 9.649 9.649 4.5 16 4.5S27.5 9.649 27.5 16 22.351 27.5 16 27.5zm6.29-8.61c-.345-.173-2.04-1.006-2.356-1.12-.315-.115-.545-.173-.774.173-.23.345-.888 1.12-1.088 1.35-.2.23-.4.258-.745.086-.345-.173-1.456-.537-2.774-1.712-1.025-.915-1.717-2.044-1.918-2.389-.2-.345-.021-.531.15-.703.155-.154.345-.402.518-.603.172-.2.23-.345.345-.575.115-.23.058-.431-.029-.603-.086-.173-.774-1.866-1.06-2.556-.28-.672-.563-.58-.774-.59l-.66-.011c-.23 0-.603.086-.918.431s-1.204 1.177-1.204 2.87 1.233 3.328 1.405 3.558c.172.23 2.428 3.707 5.883 5.198.822.355 1.464.567 1.964.725.825.263 1.576.226 2.169.137.661-.1 2.04-.833 2.327-1.638.287-.805.287-1.494.2-1.638-.086-.144-.316-.23-.66-.402z"/>
+    </svg>
+  </div>
+</a>
+
+</body>
+</html>
